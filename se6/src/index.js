@@ -1,5 +1,14 @@
-class Test {
+let getMember = new Promise((resolve, reject)=>{
+    if (true){
+        resolve('berhasil!')
+    }
+    reject('gagal')
 
-}
+}).then((msg) => {
+    console.log('ini dalam then '+ msg)
+}).catch((msg)=> {
+    console.log('ini dalam catch '+ msg)
 
-console.log(Test);
+})
+
+console.log(getMember)
